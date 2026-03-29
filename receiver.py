@@ -38,8 +38,8 @@ while True:
             break
         file_bytes += data
         if file_bytes[-5:] == b"<Fim>":
-            file_bytes = file_bytes[:-5]  #remove o marcador
-            progress.update(len(file_bytes) - 5)#ele so vai contar os bytes validos
+            file_bytes = file_bytes[:-5] 
+            progress.update(len(file_bytes) - 5)
             break
         else:
             progress.update(len(data))
