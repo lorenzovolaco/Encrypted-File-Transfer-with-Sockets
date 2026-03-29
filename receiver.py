@@ -3,7 +3,7 @@ import tqdm #barra de progresso
 import struct
 from Crypto.Cipher import AES
 
-key = b"qwertyuiopasdfgh"  #reutiliza as seguintes 3 linhas.
+key = b"qwertyuiopasdfgh"  #reutilizei as seguintes 3 linhas.
 nonce = b"mnbvcxzclkjhgfds"
 
 cipher = AES.new(key, AES.MODE_EAX, nonce)
