@@ -14,7 +14,7 @@ server.bind(("localhost", 9998))
 server.listen()
 
 while True:
-    #aceita e recebe apenas uma transferencia, não utilizei uma condição.
+    #aceita e recebe apenas uma transferencia, não utilizei uma condição(WHILE).
 
     client, address = server.accept() #address é do IP
 
